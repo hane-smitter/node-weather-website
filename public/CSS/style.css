@@ -1,0 +1,100 @@
+html {
+    position: relative;
+}
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr min-content;
+    background-color: #eee;
+}
+h1 {
+    color: brown;
+}
+h1.animate {
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+h1:hover {
+    animation-play-state: paused;
+}
+@keyframes rotate {
+    0% {
+        transform: rotateZ(1turn);
+        color: brown;
+    }
+    35% {
+        color: blueviolet;
+    }
+    70% {
+        color: gold;
+    }
+}
+img {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: .7;
+}
+.main-content {
+    margin-bottom: 10px;
+    width: 80vw;
+}
+header {
+    margin-bottom: 80px;
+}
+header ol {
+    display: inline-flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+header a {
+    text-decoration: none;
+    color: #444;
+    padding: 5px;
+}
+header a:hover {
+    color: #eee;
+    background-color: #333;
+}
+header h1 {
+    font-size: 4rem;
+    margin: 10px 0;
+}
+footer {
+    border-top: 2px solid #888;
+    align-self: end;
+    width: 100%;
+    margin-bottom: 20px;
+}
+footer h1 {
+    font-family: arial;
+    text-align: center;
+    color: #444
+}
+input {
+    padding: 5px;
+    outline: none;
+    border: 3px solid #ccc;
+    text-align: center;
+    color: #333;
+    background-color: rgb(245, 236, 219);
+    border-radius: 8px;
+}
+button {
+    color: #eee;
+    background-color: #444;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+}
