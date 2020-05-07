@@ -8,7 +8,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if(body.error){
             callback('Location not found');
         } else {
-            callback(undefined, `${body.daily.data[0].summary}. The current temperature is ${toDegreesCelsius(body.currently.temperature)}°C and there is a ${body.currently.precipProbability}% probability of raining. <b>Time at this place currently is:</b> ${formatTime(body.currently.time, body.timezone)} hrs`);
+            callback(undefined, `${body.daily.data[0].summary} The current temperature is ${toDegreesCelsius(body.currently.temperature)}°C and there is a ${body.currently.precipProbability}% probability of raining. <b>Time at this place currently is:</b> ${formatTime(body.currently.time, body.timezone)} hrs`);
         }
     })
 }
