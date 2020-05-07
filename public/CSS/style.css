@@ -11,6 +11,15 @@ body {
     grid-template-rows: 1fr min-content;
     background-color: #eee;
 }
+p {
+    font-family: arial;
+    text-align: center;
+}
+p span {
+    font-style: italic;
+    font-size: 13px;
+    color: #333;
+}
 h1 {
     color: brown;
     text-align: center;

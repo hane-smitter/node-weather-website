@@ -26,6 +26,6 @@ weartherForm.onsubmit = function(e){
             return;
         }
         locationMsg.textContent = data.location;
-        forecastMsg.textContent = data.data;
+        forecastMsg.innerHTML = data.data;
     });;
 }
