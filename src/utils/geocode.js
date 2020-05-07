@@ -1,5 +1,4 @@
 const request = require('request');
-const chalk = require('chalk');
 
 const geocode = (place, callback) => {
     const geocodeURL = `https://api.mapbox.com/geocoding/v5/mapbox.places/${place}.json?proximity=-74.70850,40.78375&access_token=pk.eyJ1Ijoic21pdHRlciIsImEiOiJjazloaXFycXMwZDJrM2htd2h5ZzBhc3pnIn0.DyIwUnDo_khsyr6FW08F1g&limit=1`;
