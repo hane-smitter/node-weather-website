@@ -11,7 +11,7 @@ document.onclick = function () {
 
 function getWeather(placeToSearch) {
     let place = placeToSearch;
-    let url = `http://localhost:4000/weather?address=${place}`;
+    let url = `/weather?address=${place}`;
     return fetch(url).then((res) => res.json());
 }
 
